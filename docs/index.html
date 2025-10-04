@@ -3,113 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EQUA (EQA)</title>
+  <title>EQUA (EQA) - Equality in Action</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #eaf8f0;
       margin: 0;
-      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
     }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .header {
-      background: linear-gradient(135deg, #00a859, #008c46);
+    header {
+      background: linear-gradient(135deg, #00c16a 0%, #009f5c 50%, #007b49 100%);
       color: white;
-      padding: 40px 20px;
-      border-radius: 16px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 60px 20px;
     }
 
-    .header img {
-      width: 70px;
-      height: 70px;
+    header img {
+      width: 120px;
+      border-radius: 50%;
       margin-bottom: 15px;
     }
 
-    .section {
-      background: #fff;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      width: 100%;
+    header h1 {
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     h2 {
-      color: #008c46;
+      color: #007b49;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.8em;
     }
 
     .wallet {
-      margin-top: 10px;
-      background: #f5faf7;
-      border-left: 4px solid #00a859;
-      padding: 15px;
-      border-radius: 8px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    /* RESPONSIVE DESKTOP LAYOUT */
-    @media screen and (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-      .header {
-        flex: 1;
-        text-align: left;
-      }
-      .section {
-        flex: 1.5;
-      }
+    .wallet code {
+      display: block;
+      font-size: 0.9em;
+      background: #f1f1f1;
+      padding: 8px;
+      border-radius: 6px;
+      margin: 10px 0;
+      word-break: break-all;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    a {
+      color: #009f5c;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://i.imgur.com/JhRH5dL.png" alt="EQUA Logo">
+    <h1>EQUA (EQA)</h1>
+    <p>EQUA is a token on the TON blockchain that bridges the crypto world with real livestock farming. 
+       Profits from farming are reinvested to strengthen value and promote equality.</p>
+    <p><a href="https://t.me/EQUA04" target="_blank" style="color:white;font-weight:bold;">Join Telegram</a></p>
+  </header>
 
-  <div class="container">
-    <div class="header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Letter_E_green_circle.png" alt="EQUA Logo">
-      <h1>EQUA (EQA)</h1>
-      <p>
-        A token on the TON blockchain that bridges crypto innovation with real-world livestock farming, 
-        promoting equality and sustainable growth.
-      </p>
-      <button style="background:white;color:#00a859;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;">
-        Join Telegram Community
-      </button>
+  <section>
+    <h2>🌐 EQUA Transparency Dashboard</h2>
+
+    <div class="wallet">
+      <strong>💼 Operational Wallet</strong>
+      <code>UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C</code>
+      <p>Used for operational expenses and real-world activities (e.g., livestock, feed purchases, and other needs).</p>
     </div>
 
-    <div class="section">
-      <h2>🔍 EQUA TRANSPARENCY</h2>
-
-      <div class="wallet">
-        <strong>Operational Wallet</strong><br>
-        Address: UQByLg-vEJdSi...<br>
-        Used for operational and real-world activities (livestock, feed, etc).
-      </div>
-
-      <div class="wallet">
-        <strong>Liquidity Wallet</strong><br>
-        Address: UQCN89HkHH...<br>
-        Used to maintain EQUA liquidity on DEX.
-      </div>
-
-      <div class="wallet">
-        <strong>Airdrop Wallet</strong><br>
-        Address: UQAzeS53zB...<br>
-        Used for distributing EQUA to community members and supporters.
-      </div>
+    <div class="wallet">
+      <strong>💧 Liquidity Wallet</strong>
+      <code>UQCN89HkHHJQw9f8aP2KwZmtH8Ah6qgXFoGFjrvJEIPUowcx</code>
+      <p>Used to provide and maintain liquidity for EQUA on DEX platforms such as ston.fi and dedust.</p>
     </div>
-  </div>
 
+    <div class="wallet">
+      <strong>🎁 Airdrop Wallet</strong>
+      <code>UQAzeS53zB069uGPqCPS0vJ64ClMzSfOYK_w9A894SZZgvfM</code>
+      <p>Used for EQUA distribution to community members, supporters, and social initiatives.</p>
+    </div>
+
+    <div class="wallet">
+      <strong>👤 Founder / Team Wallet</strong>
+      <code>UQBkxKX2xAuVJEXAz2BPWRlkaMK1nMNTkU9tfYrf3KObGk1T</code>
+      <p>Used by the EQUA Founder and Team. All transactions are public and verifiable to ensure transparency.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🛣️ EQUA Roadmap</h2>
+    <ul>
+      <li><strong>January 2026:</strong> Listing on STON.fi and start building initial liquidity.</li>
+      <li><strong>January 2027:</strong> Distribute airdrop to early EQUA token buyers.</li>
+      <li><strong>January 2028:</strong> Integrate EQUA with the food sector; profits reinvested to buy EQUA tokens.</li>
+      <li><strong>January 2029:</strong> Verify EQUA token for official recognition.</li>
+      <li><strong>January 2030:</strong> Expand food and livestock ecosystem for sustainable growth.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>📅 Last Update: October 2025</p>
+    <p>🔗 <a href="https://tonscan.org">View on TONScan</a></p>
+  </footer>
 </body>
 </html>
