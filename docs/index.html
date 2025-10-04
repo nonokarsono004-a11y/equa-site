@@ -1,137 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EQUA (EQA) - Equality in Action</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EQUA (EQA) - Equality Ecosystem</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: "Poppins", sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
+      padding: 0;
+      background: linear-gradient(180deg, #d4f8e8 0%, #fafffc 100%);
+      color: #2f3e35;
     }
-
     header {
-      background: linear-gradient(135deg, #00c16a 0%, #009f5c 50%, #007b49 100%);
-      color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: white;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
-
-    header img {
+    img.logo {
       width: 120px;
       border-radius: 50%;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
     }
-
-    header h1 {
-      font-size: 2.2em;
-      margin: 0;
+    h1 {
+      font-size: 28px;
+      margin: 10px 0;
     }
-
-    header p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: 10px auto;
+    p {
       line-height: 1.6;
     }
-
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #145a32;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #1e8449;
+      transform: scale(1.05);
+    }
     section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #007b49;
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 1.8em;
-    }
-
-    .wallet {
       background: white;
-      border-radius: 12px;
-      padding: 20px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 850px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+      color: #1e8449;
+      border-left: 6px solid #27ae60;
+      padding-left: 10px;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+    .wallet {
+      background-color: #f0fdf4;
+      border-left: 5px solid #27ae60;
+      padding: 15px;
+      border-radius: 10px;
       margin-bottom: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    .wallet code {
-      display: block;
-      font-size: 0.9em;
-      background: #f1f1f1;
-      padding: 8px;
-      border-radius: 6px;
-      margin: 10px 0;
-      word-break: break-all;
+    a {
+      color: #27ae60;
+      text-decoration: none;
+      font-weight: bold;
     }
-
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      line-height: 1.8;
+    }
     footer {
       text-align: center;
-      padding: 30px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    a {
-      color: #009f5c;
-      text-decoration: none;
+      padding: 20px;
+      background: #145a32;
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.imgur.com/JhRH5dL.png" alt="EQUA Logo">
-    <h1>EQUA (EQA)</h1>
-    <p>EQUA is a token on the TON blockchain that bridges the crypto world with real livestock farming. 
-       Profits from farming are reinvested to strengthen value and promote equality.</p>
-    <p><a href="https://t.me/EQUA04" target="_blank" style="color:white;font-weight:bold;">Join Telegram</a></p>
-  </header>
 
-  <section>
-    <h2>🌐 EQUA Transparency Dashboard</h2>
+<header>
+  <img src="https://i.imgur.com/JhRH5dL.png" alt="EQUA Logo" class="logo">
+  <h1>EQUA (EQA)</h1>
+  <p>A token on the TON blockchain that bridges crypto innovation with real-world livestock farming, promoting equality and sustainable growth.</p>
+  <a href="https://t.me/EQUA04" target="_blank" class="btn">🚀 Join Telegram Community</a>
+</header>
 
-    <div class="wallet">
-      <strong>💼 Operational Wallet</strong>
-      <code>UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C</code>
-      <p>Used for operational expenses and real-world activities (e.g., livestock, feed purchases, and other needs).</p>
-    </div>
+<section>
+  <h2>🌐 EQUA TRANSPARENCY</h2>
 
-    <div class="wallet">
-      <strong>💧 Liquidity Wallet</strong>
-      <code>UQCN89HkHHJQw9f8aP2KwZmtH8Ah6qgXFoGFjrvJEIPUowcx</code>
-      <p>Used to provide and maintain liquidity for EQUA on DEX platforms such as ston.fi and dedust.</p>
-    </div>
+  <div class="wallet">
+    <h3>💼 Operational Wallet</h3>
+    <p><b>Address:</b> UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C</p>
+    <p>Used for operational and real-world activities (livestock, feed purchases, and business expenses).</p>
+    <a href="https://tonscan.org/address/UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C" target="_blank">🔗 View on TONScan</a>
+  </div>
 
-    <div class="wallet">
-      <strong>🎁 Airdrop Wallet</strong>
-      <code>UQAzeS53zB069uGPqCPS0vJ64ClMzSfOYK_w9A894SZZgvfM</code>
-      <p>Used for EQUA distribution to community members, supporters, and social initiatives.</p>
-    </div>
+  <div class="wallet">
+    <h3>💧 Liquidity Wallet</h3>
+    <p><b>Address:</b> UQCN89HkHHJQw9f8aP2KwZmtH8Ah6qgXFoGFjrvJEIPUowcx</p>
+    <p>Used to provide and maintain EQUA liquidity on DEX platforms such as STON.fi and DeDust.</p>
+    <a href="https://tonscan.org/address/UQCN89HkHHJQw9f8aP2KwZmtH8Ah6qgXFoGFjrvJEIPUowcx" target="_blank">🔗 View on TONScan</a>
+  </div>
 
-    <div class="wallet">
-      <strong>👤 Founder / Team Wallet</strong>
-      <code>UQBkxKX2xAuVJEXAz2BPWRlkaMK1nMNTkU9tfYrf3KObGk1T</code>
-      <p>Used by the EQUA Founder and Team. All transactions are public and verifiable to ensure transparency.</p>
-    </div>
-  </section>
+  <div class="wallet">
+    <h3>🎁 Airdrop Wallet</h3>
+    <p><b>Address:</b> UQAzeS53zB069uGPqCPS0vJ64ClMzSfOYK_w9A894SZZgvfM</p>
+    <p>Used for distributing EQUA to community members, early supporters, and social initiatives.</p>
+    <a href="https://tonscan.org/address/UQAzeS53zB069uGPqCPS0vJ64ClMzSfOYK_w9A894SZZgvfM" target="_blank">🔗 View on TONScan</a>
+  </div>
 
-  <section>
-    <h2>🛣️ EQUA Roadmap</h2>
-    <ul>
-      <li><strong>January 2026:</strong> Listing on STON.fi and start building initial liquidity.</li>
-      <li><strong>January 2027:</strong> Distribute airdrop to early EQUA token buyers.</li>
-      <li><strong>January 2028:</strong> Integrate EQUA with the food sector; profits reinvested to buy EQUA tokens.</li>
-      <li><strong>January 2029:</strong> Verify EQUA token for official recognition.</li>
-      <li><strong>January 2030:</strong> Expand food and livestock ecosystem for sustainable growth.</li>
-    </ul>
-  </section>
+  <div class="wallet">
+    <h3>👤 Founder / Team Wallet</h3>
+    <p><b>Address:</b> UQBkxKX2xAuVJEXAz2BPWRlkaMK1nMNTkU9tfYrf3KObGk1T</p>
+    <p>Used by EQUA Founder and Team. All transactions are public and verifiable to ensure transparency.</p>
+    <a href="https://tonscan.org/address/UQBkxKX2xAuVJEXAz2BPWRlkaMK1nMNTkU9tfYrf3KObGk1T" target="_blank">🔗 View on TONScan</a>
+  </div>
+</section>
 
-  <footer>
-    <p>📅 Last Update: October 2025</p>
-    <p>🔗 <a href="https://tonscan.org">View on TONScan</a></p>
-  </footer>
+<section>
+  <h2>💠 EQUA TOKEN INFORMATION</h2>
+  <p><b>Token Name:</b> EQUA</p>
+  <p><b>Symbol:</b> EQA</p>
+  <p><b>Network:</b> TON</p>
+  <p><b>Jetton Master Address:</b> 
+    <a href="https://tonscan.org/token/EQDKW8Fy__xku9S5JsfSoFnwg6OKMunQRsWR-pIFqoCWQKZE" target="_blank">
+    EQDKW8Fy__xku9S5JsfSoFnwg6OKMunQRsWR-pIFqoCWQKZE
+    </a>
+  </p>
+</section>
+
+<section>
+  <h2>🛣️ EQUA ROADMAP</h2>
+  <ul>
+    <li><b>January 2026:</b> Listing on STON.fi and building initial liquidity.</li>
+    <li><b>January 2027:</b> Distribute airdrop to early EQUA token buyers.</li>
+    <li><b>January 2028:</b> EQUA integrates with the food and livestock sector. Profits are reinvested to sustain EQUA value.</li>
+    <li><b>January 2029:</b> EQUA token verification for official recognition.</li>
+    <li><b>January 2030:</b> EQUA ecosystem grows strong and token value becomes sustainable.</li>
+  </ul>
+</section>
+
+<footer>
+  © 2025 EQUA Project — Powered by TON Blockchain
+</footer>
+
 </body>
 </html>
