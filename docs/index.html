@@ -3,210 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EQUA (EQA) - Equality Ecosystem</title>
+  <title>EQUA (EQA)</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: #eaf8f0;
       margin: 0;
-      background: linear-gradient(135deg, #d9fdd3, #f5fff5);
-      color: #1c3c27;
+      padding: 0;
     }
 
-    header {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #00a859, #008c46);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 16px;
       text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #2ecc71, #27ae60);
-      color: white;
-      border-bottom-left-radius: 60px;
-      border-bottom-right-radius: 60px;
-      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    header img {
-      width: 130px;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    .header img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
     }
 
-    header h1 {
-      font-size: 2em;
-      margin: 15px 0 10px;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      line-height: 1.6;
-      font-size: 1.05em;
-    }
-
-    .btn {
-      background-color: white;
-      color: #2ecc71;
-      padding: 12px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #1e8449;
-      color: white;
-      transform: scale(1.05);
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 25px;
-      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
+    .section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
     }
 
     h2 {
-      color: #1e8449;
-      border-left: 6px solid #2ecc71;
-      padding-left: 12px;
-      font-size: 22px;
-      margin-bottom: 25px;
-      text-transform: uppercase;
-    }
-
-    .wallets {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      color: #008c46;
     }
 
     .wallet {
-      background: #f6fef9;
-      border-radius: 15px;
-      padding: 20px;
-      border: 1px solid #d5f5e3;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-      transition: 0.3s;
+      margin-top: 10px;
+      background: #f5faf7;
+      border-left: 4px solid #00a859;
+      padding: 15px;
+      border-radius: 8px;
     }
 
-    .wallet:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(46, 204, 113, 0.1);
-    }
-
-    .wallet h3 {
-      margin-top: 0;
-    }
-
-    a {
-      color: #2ecc71;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      line-height: 1.8;
-      padding-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #145a32;
-      color: white;
-      border-top-left-radius: 40px;
-      border-top-right-radius: 40px;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5em;
+    /* RESPONSIVE DESKTOP LAYOUT */
+    @media screen and (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: flex-start;
       }
-      section {
-        padding: 20px;
+      .header {
+        flex: 1;
+        text-align: left;
+      }
+      .section {
+        flex: 1.5;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://i.imgur.com/JhRH5dL.png" alt="EQUA Logo" />
-    <h1>EQUA (EQA)</h1>
-    <p>
-      A token on the TON blockchain that bridges crypto innovation with
-      real-world livestock farming — promoting equality and sustainable growth.
-    </p>
-    <a href="https://t.me/EQUA04" target="_blank" class="btn">🚀 Join Telegram Community</a>
-  </header>
-
-  <section>
-    <h2>🌐 EQUA TRANSPARENCY</h2>
-    <div class="wallets">
-
-      <div class="wallet">
-        <h3>💼 Operational Wallet</h3>
-        <p><strong>Address:</strong><br> UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C</p>
-        <p>Used for operational and real-world activities (livestock, feed purchases, and business expenses).</p>
-        <a href="https://tonscan.org/address/UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C" target="_blank">🔗 View on TONScan</a>
-      </div>
-
-      <div class="wallet">
-        <h3>💧 Liquidity Wallet</h3>
-        <p><strong>Address:</strong><br> UQCN89HkHHJQw9f8aP2KwZmtH8Ah6qgXFoGFjrvJEIPUowcx</p>
-        <p>Used to provide and maintain EQUA liquidity on DEX platforms such as STON.fi and DeDust.</p>
-        <a href="https://tonscan.org/address/UQCN89HkHHJQw9f8aP2KwZmtH8Ah6qgXFoGFjrvJEIPUowcx" target="_blank">🔗 View on TONScan</a>
-      </div>
-
-      <div class="wallet">
-        <h3>🎁 Airdrop Wallet</h3>
-        <p><strong>Address:</strong><br> UQAzeS53zB069uGPqCPS0vJ64ClMzSfOYK_w9A894SZZgvfM</p>
-        <p>Used for distributing EQUA to community members, early supporters, and social initiatives.</p>
-        <a href="https://tonscan.org/address/UQAzeS53zB069uGPqCPS0vJ64ClMzSfOYK_w9A894SZZgvfM" target="_blank">🔗 View on TONScan</a>
-      </div>
-
-      <div class="wallet">
-        <h3>👤 Founder / Team Wallet</h3>
-        <p><strong>Address:</strong><br> UQBkxKX2xAuVJEXAz2BPWRlkaMK1nMNTkU9tfYrf3KObGk1T</p>
-        <p>Used by the EQUA Founder and Team. All transactions are public and verifiable for transparency.</p>
-        <a href="https://tonscan.org/address/UQBkxKX2xAuVJEXAz2BPWRlkaMK1nMNTkU9tfYrf3KObGk1T" target="_blank">🔗 View on TONScan</a>
-      </div>
-
+  <div class="container">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Letter_E_green_circle.png" alt="EQUA Logo">
+      <h1>EQUA (EQA)</h1>
+      <p>
+        A token on the TON blockchain that bridges crypto innovation with real-world livestock farming, 
+        promoting equality and sustainable growth.
+      </p>
+      <button style="background:white;color:#00a859;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;">
+        Join Telegram Community
+      </button>
     </div>
-  </section>
 
-  <section>
-    <h2>💠 EQUA TOKEN INFORMATION</h2>
-    <p><b>Token Name:</b> EQUA</p>
-    <p><b>Symbol:</b> EQA</p>
-    <p><b>Network:</b> TON</p>
-    <p><b>Jetton Master:</b>
-      <a href="https://tonscan.org/token/EQDKW8Fy__xku9S5JsfSoFnwg6OKMunQRsWR-pIFqoCWQKZE" target="_blank">
-        EQDKW8Fy__xku9S5JsfSoFnwg6OKMunQRsWR-pIFqoCWQKZE
-      </a>
-    </p>
-  </section>
+    <div class="section">
+      <h2>🔍 EQUA TRANSPARENCY</h2>
 
-  <section>
-    <h2>🛣️ EQUA ROADMAP</h2>
-    <ul>
-      <li><b>January 2026:</b> Listing on STON.fi and building initial liquidity.</li>
-      <li><b>January 2027:</b> Distribute airdrop to early EQUA token buyers.</li>
-      <li><b>January 2028:</b> EQUA integrates with food & livestock — profits reinvested to sustain value.</li>
-      <li><b>January 2029:</b> EQUA token verification for official recognition.</li>
-      <li><b>January 2030:</b> EQUA ecosystem grows and achieves sustainable token value.</li>
-    </ul>
-  </section>
+      <div class="wallet">
+        <strong>Operational Wallet</strong><br>
+        Address: UQByLg-vEJdSi...<br>
+        Used for operational and real-world activities (livestock, feed, etc).
+      </div>
 
-  <footer>
-    © 2025 EQUA Project — Built on TON Blockchain
-  </footer>
+      <div class="wallet">
+        <strong>Liquidity Wallet</strong><br>
+        Address: UQCN89HkHH...<br>
+        Used to maintain EQUA liquidity on DEX.
+      </div>
+
+      <div class="wallet">
+        <strong>Airdrop Wallet</strong><br>
+        Address: UQAzeS53zB...<br>
+        Used for distributing EQUA to community members and supporters.
+      </div>
+    </div>
+  </div>
 
 </body>
-      </html>
+</html>
