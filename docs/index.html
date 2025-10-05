@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     background: white;
-    color: #000000; /* teks utama hitam */
+    color: #000000;
     overflow-x: hidden;
   }
 
@@ -18,7 +18,7 @@
     text-align: center;
     padding: 60px 20px 100px 20px;
     background: white;
-    color: #000000; /* teks hitam */
+    color: #000000;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -35,30 +35,16 @@
     z-index: 2;
   }
 
-  .cow {
-    position: absolute;
-    bottom: 30px;
-    left: -120px;
-    width: 100px;
-    animation: walk 12s linear infinite;
-    z-index: 1;
-  }
-
-  @keyframes walk {
-    0% { left: -150px; }
-    100% { left: 110%; }
-  }
-
   h1 {
     font-size: 30px;
     margin: 10px 0;
-    color: #27ae60; /* hijau */
+    color: #27ae60;
     z-index: 2;
     position: relative;
   }
 
   h2 {
-    color: #27ae60; /* hijau */
+    color: #27ae60;
     border-left: 6px solid #27ae60;
     padding-left: 10px;
     font-size: 22px;
@@ -69,7 +55,7 @@
     line-height: 1.6;
     position: relative;
     z-index: 2;
-    color: #000000; /* hitam */
+    color: #000000;
   }
 
   .btn {
@@ -90,26 +76,33 @@
     transform: scale(1.05);
   }
 
-  .gold-leaf {
+  /* 🍃 Daun hijau berjatuhan (lebih banyak & bervariasi) */
+  .green-leaf {
     position: absolute;
     top: -50px;
-    width: 15px;
-    height: 25px;
-    background: linear-gradient(45deg, #ffd700, #ffb300, #fff8dc);
+    width: 20px; /* default agak lebih besar */
+    height: 30px;
+    background: linear-gradient(45deg, #4caf50, #2e7d32, #81c784);
     border-radius: 50% 50% 40% 40%;
     opacity: 0.9;
-    animation: fallGold 10s infinite linear;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: fallLeaf 10s infinite linear;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
     z-index: 0;
   }
 
-  .gold-leaf:nth-child(1) { left: 10%; animation-delay: 0s; }
-  .gold-leaf:nth-child(2) { left: 30%; animation-delay: 2s; }
-  .gold-leaf:nth-child(3) { left: 50%; animation-delay: 4s; }
-  .gold-leaf:nth-child(4) { left: 70%; animation-delay: 6s; }
-  .gold-leaf:nth-child(5) { left: 90%; animation-delay: 8s; }
+  /* Posisi dan variasi daun */
+  .green-leaf:nth-child(1) { left: 5%; animation-delay: 0s; width: 25px; height: 35px; }
+  .green-leaf:nth-child(2) { left: 15%; animation-delay: 1s; width: 20px; height: 30px; }
+  .green-leaf:nth-child(3) { left: 25%; animation-delay: 2s; width: 22px; height: 32px; }
+  .green-leaf:nth-child(4) { left: 35%; animation-delay: 0.5s; width: 18px; height: 28px; }
+  .green-leaf:nth-child(5) { left: 45%; animation-delay: 3s; width: 24px; height: 36px; }
+  .green-leaf:nth-child(6) { left: 55%; animation-delay: 2.5s; width: 20px; height: 30px; }
+  .green-leaf:nth-child(7) { left: 65%; animation-delay: 1.5s; width: 22px; height: 32px; }
+  .green-leaf:nth-child(8) { left: 75%; animation-delay: 3.5s; width: 25px; height: 35px; }
+  .green-leaf:nth-child(9) { left: 85%; animation-delay: 4s; width: 20px; height: 30px; }
+  .green-leaf:nth-child(10) { left: 95%; animation-delay: 4.5s; width: 23px; height: 33px; }
 
-  @keyframes fallGold {
+  @keyframes fallLeaf {
     0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
     50% { transform: translateY(300px) rotate(180deg); opacity: 0.8; }
     100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
@@ -130,11 +123,11 @@
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    color: #000000; /* teks hitam */
+    color: #000000;
   }
 
   a {
-    color: #27ae60; /* hijau */
+    color: #27ae60;
     text-decoration: none;
     font-weight: bold;
   }
@@ -145,14 +138,14 @@
 
   ul {
     line-height: 1.8;
-    color: #000000; /* hitam */
+    color: #000000;
   }
 
   footer {
     text-align: center;
     padding: 20px;
     background: white;
-    color: #000000; /* hitam */
+    color: #000000;
     font-size: 14px;
     margin-top: 40px;
     border-top-left-radius: 30px;
@@ -164,13 +157,19 @@
 <body>
 
 <header>
-  <div class="gold-leaf"></div>
-  <div class="gold-leaf"></div>
-  <div class="gold-leaf"></div>
-  <div class="gold-leaf"></div>
-  <div class="gold-leaf"></div>
+  <!-- 🍃 Daun hijau lebih banyak -->
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
+  <div class="green-leaf"></div>
 
-  <img src="https://i.imgur.com/1T3x7Up.png" alt="Walking Cow" class="cow">
+  <!-- 🌿 Logo EQUA -->
   <img src="https://i.imgur.com/JhRH5dL.png" alt="EQUA Logo" class="logo">
   <h1>EQUA (EQA)</h1>
   <p>A token on the TON blockchain that bridges crypto innovation with real-world livestock farming, promoting equality and sustainable growth.</p>
@@ -216,25 +215,4 @@
   <p><b>Network:</b> TON</p>
   <p><b>Jetton Master Address:</b> 
     <a href="https://tonscan.org/token/EQDKW8Fy__xku9S5JsfSoFnwg6OKMunQRsWR-pIFqoCWQKZE" target="_blank">
-    EQDKW8Fy__xku9S5JsfSoFnwg6OKMunQRsWR-pIFqoCWQKZE
-    </a>
-  </p>
-</section>
-
-<section>
-  <h2>🛣️ EQUA ROADMAP</h2>
-  <ul>
-    <li><b>January 2026:</b> Listing on STON.fi and building initial liquidity.</li>
-    <li><b>January 2027:</b> Distribute airdrop to early EQUA token buyers.</li>
-    <li><b>January 2028:</b> EQUA integrates with the food and livestock sector. Profits are reinvested to sustain EQUA value.</li>
-    <li><b>January 2029:</b> EQUA token verification for official recognition.</li>
-    <li><b>January 2030:</b> EQUA ecosystem grows strong and token value becomes sustainable.</li>
-  </ul>
-</section>
-
-<footer>
-  © 2025 EQUA Project — Powered by TON Blockchain
-</footer>
-
-</body>
-</html>
+    EQDKW8Fy__xku9S5JsfSoFnwg
