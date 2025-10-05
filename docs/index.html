@@ -16,60 +16,51 @@
 
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px 100px 20px;
       background: linear-gradient(135deg, #2ecc71, #27ae60);
       color: white;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       position: relative;
       overflow: hidden;
     }
 
-    /* Logo */
     img.logo {
-      width: 120px;
+      width: 130px;
       border-radius: 50%;
-      margin-bottom: 10px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
       position: relative;
       z-index: 2;
     }
 
-    /* Sapi jalan */
     .cow {
       position: absolute;
-      bottom: 10px;
-      left: -150px;
-      width: 120px;
-      animation: walk 20s linear infinite;
+      bottom: 30px;
+      left: -120px;
+      width: 100px;
+      animation: walk 12s linear infinite;
       z-index: 1;
-      opacity: 0.9;
     }
 
     @keyframes walk {
       0% { left: -150px; }
-      50% { transform: scaleX(1); }
-      100% { left: 100vw; }
+      100% { left: 110%; }
     }
 
-    /* Daun jatuh */
-    .leaf {
-      position: absolute;
-      top: -50px;
-      width: 30px;
-      animation: fall linear infinite;
-      opacity: 0.7;
-      z-index: 1;
+    h1 {
+      font-size: 30px;
+      margin: 10px 0;
+      z-index: 2;
+      position: relative;
     }
 
-    @keyframes fall {
-      0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
+    p {
+      line-height: 1.6;
+      position: relative;
+      z-index: 2;
     }
-
-    h1 { font-size: 28px; margin: 10px 0; }
-    p { line-height: 1.6; }
 
     .btn {
       display: inline-block;
@@ -80,13 +71,48 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
-      position: relative;
       z-index: 2;
+      position: relative;
     }
 
     .btn:hover {
       background-color: #1e8449;
       transform: scale(1.05);
+    }
+
+    /* ✨ Daun emas berjatuhan */
+    .gold-leaf {
+      position: absolute;
+      top: -50px;
+      width: 15px;
+      height: 25px;
+      background: linear-gradient(45deg, #ffd700, #ffb300, #fff8dc);
+      border-radius: 50% 50% 40% 40%;
+      opacity: 0.9;
+      animation: fallGold 10s infinite linear;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      z-index: 0;
+    }
+
+    .gold-leaf:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .gold-leaf:nth-child(2) { left: 30%; animation-delay: 2s; }
+    .gold-leaf:nth-child(3) { left: 50%; animation-delay: 4s; }
+    .gold-leaf:nth-child(4) { left: 70%; animation-delay: 6s; }
+    .gold-leaf:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+    @keyframes fallGold {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(300px) rotate(180deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(600px) rotate(360deg);
+        opacity: 0;
+      }
     }
 
     section {
@@ -114,9 +140,19 @@
       margin-bottom: 15px;
     }
 
-    a { color: #27ae60; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    ul { line-height: 1.8; }
+    a {
+      color: #27ae60;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
 
     footer {
       text-align: center;
@@ -133,24 +169,26 @@
 <body>
 
 <header>
-  <!-- Daun jatuh acak -->
-  <img src="https://i.imgur.com/tEucSks.png" class="leaf" style="left:10%; animation-duration:7s;">
-  <img src="https://i.imgur.com/tEucSks.png" class="leaf" style="left:30%; animation-duration:9s;">
-  <img src="https://i.imgur.com/tEucSks.png" class="leaf" style="left:50%; animation-duration:11s;">
-  <img src="https://i.imgur.com/tEucSks.png" class="leaf" style="left:70%; animation-duration:8s;">
-  <img src="https://i.imgur.com/tEucSks.png" class="leaf" style="left:90%; animation-duration:10s;">
+  <!-- 🌟 Daun emas berjatuhan -->
+  <div class="gold-leaf"></div>
+  <div class="gold-leaf"></div>
+  <div class="gold-leaf"></div>
+  <div class="gold-leaf"></div>
+  <div class="gold-leaf"></div>
 
+  <!-- 🐄 Sapi berjalan -->
+  <img src="https://i.imgur.com/1T3x7Up.png" alt="Walking Cow" class="cow">
+
+  <!-- 🌿 Logo EQUA -->
   <img src="https://i.imgur.com/JhRH5dL.png" alt="EQUA Logo" class="logo">
   <h1>EQUA (EQA)</h1>
   <p>A token on the TON blockchain that bridges crypto innovation with real-world livestock farming, promoting equality and sustainable growth.</p>
   <a href="https://t.me/EQUA04" target="_blank" class="btn">🚀 Join Telegram Community</a>
-
-  <!-- Sapi berjalan -->
-  <img src="https://i.imgur.com/VaMHyCN.png" alt="Cow walking" class="cow">
 </header>
 
 <section>
   <h2>🌐 EQUA TRANSPARENCY</h2>
+
   <div class="wallet">
     <h3>💼 Operational Wallet</h3>
     <p><b>Address:</b> UQByLg-vEJdSi_K5zl_1bMzlJ723ONr-KS5kw6YRPhdLyU6C</p>
@@ -208,4 +246,4 @@
 </footer>
 
 </body>
-  </html>
+      </html>
